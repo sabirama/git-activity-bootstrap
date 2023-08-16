@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-warning">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -73,25 +73,45 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+        <div class="carousel-item active c-item">
+          <img
+            src="boracay-carousel.jpg"
+            class="d-block w-100 c-image"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">
+              It's More fun in the Philippines!
+            </p>
+            <p class="display-1 fw-bolder text-capitalize">Boracay Island</p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+        <div class="carousel-item c-item">
+          <img
+            src="palawan-carousel.jpg"
+            class="d-block w-100 c-image"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">
+              It's More fun in the Philippines!
+            </p>
+            <p class="display-1 fw-bold text-capitalize">Palawan</p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+        <div class="carousel-item c-item">
+          <img
+            src="terraces-carousel.jpg"
+            class="d-block w-100 c-image"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">
+              It's More fun in the Philippines!
+            </p>
+            <p class="display-1 fw-bold text-capitalize">
+              Banaue Rice Terraces
+            </p>
           </div>
         </div>
       </div>
@@ -115,52 +135,125 @@
       </button>
     </div>
 
-    <section class="contact">
-      <form action="">
+    <section class="contact container">
+      <form action="" class="d-flex flex-column container-s">
         <label>Name</label>
-        <input type="text" />
+        <input type="text" class="m-2" />
 
         <label for="">E-mail</label>
-        <input type="email" />
+        <input type="email" class="m-2" />
 
         <label for="">Mobile Number</label>
-        <input type="numer" />
-
-        <input type="button" value="Submit" />
+        <input type="number" class="m-2" />
+        <label for="">Comment</label>
+        <textarea name="" id="" cols="30" rows="10" class="m-2"></textarea>
+        <input type="Submit" class="m-2 p-3 submit" />
       </form>
     </section>
 
-    <footer>
-      <ul id="footer-contact" class="list-group container">
-        CONTACTS
-        <li>
-          <a href="mailto:" class="text-decoration-none">travel@mail.com</a>
-        </li>
-        <li>
-          <a href="tel:+" class="text-decoration-none">+000000000</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none">Phlippines</a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="d-flex justify-content-between p-5">
+        <ul id="footer-contact" class="list-group">
+          CONTACT US
+          <li>
+            <a href="mailto:" class="text-decoration-none text-white"
+              >travel@mail.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+" class="text-decoration-none text-white"
+              >+000000000</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">Phlippines</a>
+          </li>
+        </ul>
 
-      <ul id="footer-social-links" class="list-group container">
-        SOCIAL LINKS
-        <li>
-          <a href="#" class="text-decoration-none">facebook</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none">instagram</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none">X</a>
-        </li>
-      </ul>
+        <ul id="footer-social-links" class="list-group">
+          SOCIAL LINKS
+          <li>
+            <a href="#" class="text-decoration-none text-white">facebook</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">instagram</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">X</a>
+          </li>
+        </ul>
 
-      <div>
-        <input type="email" />
-        <input type="button" value="submit" />
+        <ul id="footer-social-links" class="list-group">
+          HELP
+          <li>
+            <a href="#" class="text-decoration-none text-white"
+              >Costumer Service</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">Booking</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">Chat Us</a>
+          </li>
+        </ul>
+
+        <div>
+          <input
+            type="email"
+            placeholder="email"
+            class="newsletter-email d-block"
+          />
+          <button>SUBSCRIBE TO NEWSLETTER</button>
+        </div>
       </div>
+      <p class="text-center p-3">&copy; 2023. All Rights Reserved</p>
     </footer>
+
+    <style>
+      .contact {
+        background-image: url(Anguib-Beach-Cagayan.jpg);
+        width: 40%;
+        justify-content: left;
+        background-color: springgreen;
+        padding: 50px;
+        border-radius: 0 40px 40px;
+        margin: 40px auto;
+      }
+
+      .contact form input,
+      .contact form textarea {
+        border: none;
+        border-radius: 20px;
+        resize: none;
+      }
+
+      .contact label {
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 12px 0;
+        padding: 0 20px;
+      }
+
+      .submit {
+        width: fit-content;
+        border-radius: 20px;
+        align-self: center;
+      }
+
+      .footer {
+        background-color: rgba(128, 128, 128, 0.711);
+      }
+
+      .footer div input {
+        width: 100%;
+        background: none;
+        margin-bottom: 10px;
+      }
+
+      .footer div button {
+        border: none;
+      }
+    </style>
   </body>
 </html>
